@@ -30,12 +30,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v5
 
-      - name: Injecter l'année courante
+      - name: Injecter l'année + cache-busting (commit)
         run: |
           YEAR="$(date -u +%Y)"
-          echo "Année injectée: $YEAR"
-          find . -maxdepth 1 -name '*.html' -print0 \
-            | xargs -0 sed -i "s#<span id=\"year\">[0-9]\{4\}</span>#<span id=\"year\">$YEAR</span>#g"
+          SHA="${GITHUB_SHA:0:7}"
+          echo "Année: $YEAR | cache-bust: $SHA"
+          find . -maxdepth 1 -name '*.html' -print0 | xargs -0 sed -i \
+            -e "s#<span id=\"year\">[0-9]\{4\}</span>#<span id=\"year\">$YEAR</span>#g" \
+            -e "s#?v=[0-9A-Za-z]\{1,\}#?v=$SHA#g"
 
       - name: Configure Pages
         uses: actions/configure-pages@v6
