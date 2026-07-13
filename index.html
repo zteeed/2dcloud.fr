@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2D Cloud · Cybersécurité managée pour TPE, PME & ETI</title>
+  <meta name="description" content="2D Cloud veille sur vos ordinateurs, serveurs et votre messagerie, détecte les menaces et intervient à votre place. Protection des postes, audit de sécurité et anti-phishing pour TPE, PME & ETI." />
+  <meta name="theme-color" content="#0a1b3d" />
+  <meta name="author" content="2D Cloud" />
+  <link rel="canonical" href="https://www.2dcloud.fr/" />
+
+  <!-- Évite le flash de thème au chargement -->
+  <script>(function(){try{var t=localStorage.getItem("theme")||(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="2D Cloud" />
+  <meta property="og:title" content="2D Cloud · Votre entreprise protégée, jour et nuit." />
+  <meta property="og:description" content="Cybersécurité managée pour TPE, PME & ETI: protection des postes & serveurs, audit de sécurité, protection de la messagerie." />
+  <meta property="og:url" content="https://www.2dcloud.fr/" />
+  <meta property="og:image" content="https://www.2dcloud.fr/assets/img/2dcloud-logo.png" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="twitter:card" content="summary" />
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/img/2dcloud-logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css?v=2" />
+  <noscript><style>.reveal{opacity:1 !important;transform:none !important;}.slide{position:relative !important;opacity:1 !important;}.carousel__track{display:block !important;transform:none !important;}</style></noscript>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "2D Cloud",
+    "url": "https://www.2dcloud.fr",
+    "description": "Cybersécurité managée pour TPE, PME & ETI: protection des postes & serveurs, audit de sécurité et protection de la messagerie.",
+    "email": "contact@2dcloud.fr",
+    "areaServed": "FR",
+    "slogan": "Votre entreprise protégée, jour et nuit."
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header__inner">
+      <a href="#hero" class="brand" aria-label="2D Cloud · accueil">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" width="34" height="34" role="img">
+            <defs>
+              <linearGradient id="shieldGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#3fb6f2" />
+                <stop offset="0.5" stop-color="#1f6fd6" />
+                <stop offset="1" stop-color="#0f2f7a" />
+              </linearGradient>
+            </defs>
+            <path d="M32 3 L57 12 V31 C57 46 46 56 32 61 C18 56 7 46 7 31 V12 Z" fill="url(#shieldGrad)" stroke="#4fc0f5" stroke-width="2"/>
+            <path d="M21 32 L29 40 L44 23" fill="none" stroke="#fff" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="brand__text">
+          <span class="brand__name">2D <span>Cloud</span></span>
+          <span class="brand__tag">Cybersécurité managée</span>
+        </span>
+      </a>
+
+      <div class="header__actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Passer en mode sombre" aria-pressed="false" title="Changer de thème">
+          <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8 6 18M18 6l1.8-1.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+
+        <nav class="nav" aria-label="Navigation principale">
+          <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Ouvrir le menu">
+            <span></span><span></span><span></span>
+          </button>
+          <ul class="nav__menu" id="navMenu">
+            <li><a href="#contexte">Le contexte</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#resume">En résumé</a></li>
+            <li><a href="#contact" class="nav__cta">Parlons-en</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="hero">
+      <div class="hero__grid-bg" aria-hidden="true"></div>
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="badge badge--outline">Sérénité numérique</p>
+          <p class="overline overline--light">Protection · Surveillance · Réaction</p>
+          <h1 class="hero__title">
+            Votre entreprise protégée,<br />
+            <span class="accent">jour et nuit.</span>
+          </h1>
+          <p class="hero__lead">
+            Les cyberattaques ne préviennent pas. 2D Cloud veille sur vos ordinateurs,
+            vos serveurs et votre messagerie, détecte les menaces et intervient à votre
+            place. Sans que vous ayez à devenir expert en sécurité.
+          </p>
+          <div class="hero__pills">
+            <a href="#service-postes" class="pill"><span class="pill__dot"></span>Protection des postes &amp; serveurs</a>
+            <a href="#service-audit" class="pill"><span class="pill__dot"></span>Audit de sécurité</a>
+            <a href="#service-messagerie" class="pill"><span class="pill__dot"></span>Messagerie &amp; anti-phishing</a>
+          </div>
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--primary">Demander un échange gratuit</a>
+            <a href="#services" class="btn btn--ghost">Découvrir nos services</a>
+          </div>
+        </div>
+
+        <!-- Visuel : cluster d'infrastructure résiliente -->
+        <div class="hero__visual" aria-hidden="true">
+          <div class="cluster">
+            <svg class="cluster__svg" viewBox="0 0 520 520" role="img">
+              <defs>
+                <radialGradient id="radarGrad" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#5fc8fb" stop-opacity="0.42" />
+                  <stop offset="70%" stop-color="#3f9fe6" stop-opacity="0.08" />
+                  <stop offset="100%" stop-color="#3f9fe6" stop-opacity="0" />
+                </radialGradient>
+                <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#57c6fb" stop-opacity="0.55" />
+                  <stop offset="100%" stop-color="#57c6fb" stop-opacity="0" />
+                </radialGradient>
+              </defs>
+
+              <!-- Orbite externe + satellites -->
+              <circle cx="260" cy="260" r="222" fill="none" stroke="#67b4ef" stroke-opacity="0.12" stroke-dasharray="2 9" />
+              <g class="cluster__orbit">
+                <circle cx="260" cy="38" r="3.4" fill="#7ad2f7" />
+                <circle cx="482" cy="260" r="2.6" fill="#7ad2f7" fill-opacity="0.7" />
+                <circle cx="260" cy="482" r="3" fill="#7ad2f7" fill-opacity="0.85" />
+              </g>
+
+              <!-- Liens : mailles (redondance) -->
+              <g stroke="#5aa8e8" stroke-opacity="0.28" fill="none">
+                <path d="M260,90 L407,175" class="line-mesh" />
+                <path d="M407,175 L407,345" class="line-mesh" />
+                <path d="M407,345 L260,430" class="line-mesh" />
+                <path d="M260,430 L113,345" class="line-mesh" />
+                <path d="M113,345 L113,175" class="line-mesh" />
+                <path d="M113,175 L260,90" class="line-mesh" />
+              </g>
+
+              <!-- Liens : rayons vers le cœur (flux de données) -->
+              <g stroke="#63c2f5" stroke-opacity="0.5" fill="none" stroke-linecap="round">
+                <path d="M260,260 L260,90" class="spoke" />
+                <path d="M260,260 L407,175" class="spoke" />
+                <path d="M260,260 L407,345" class="spoke" />
+                <path d="M260,260 L260,430" class="spoke" />
+                <path d="M260,260 L113,345" class="spoke" />
+                <path d="M260,260 L113,175" class="spoke" />
+              </g>
+
+              <!-- Radar de surveillance -->
+              <g>
+                <path d="M260,260 L260,50 A210,210 0 0 1 441,155 Z" fill="url(#radarGrad)">
+                  <animateTransform attributeName="transform" type="rotate" from="0 260 260" to="360 260 260" dur="7s" repeatCount="indefinite" />
+                </path>
+              </g>
+
+              <!-- Anneaux de pulsation -->
+              <circle cx="260" cy="260" r="46" fill="none" stroke="#54c2f7" stroke-width="1.5">
+                <animate attributeName="r" values="46;205" dur="4.2s" repeatCount="indefinite" />
+                <animate attributeName="stroke-opacity" values="0.55;0" dur="4.2s" repeatCount="indefinite" />
+              </circle>
+              <circle cx="260" cy="260" r="46" fill="none" stroke="#54c2f7" stroke-width="1.5">
+                <animate attributeName="r" values="46;205" dur="4.2s" begin="1.4s" repeatCount="indefinite" />
+                <animate attributeName="stroke-opacity" values="0.55;0" dur="4.2s" begin="1.4s" repeatCount="indefinite" />
+              </circle>
+              <circle cx="260" cy="260" r="46" fill="none" stroke="#54c2f7" stroke-width="1.5">
+                <animate attributeName="r" values="46;205" dur="4.2s" begin="2.8s" repeatCount="indefinite" />
+                <animate attributeName="stroke-opacity" values="0.55;0" dur="4.2s" begin="2.8s" repeatCount="indefinite" />
+              </circle>
+
+              <!-- Nœuds serveurs -->
+              <g class="node" style="--d:0s"><g transform="translate(260,90)">
+                <rect x="-46" y="-28" width="92" height="56" rx="11" fill="#0d264f" stroke="#3f8fd8" stroke-opacity="0.55" />
+                <rect x="-34" y="-16" width="60" height="6" rx="3" fill="#17417c" />
+                <rect x="-34" y="-3" width="60" height="6" rx="3" fill="#17417c" />
+                <rect x="-34" y="10" width="60" height="6" rx="3" fill="#17417c" />
+                <circle class="led" cx="32" cy="-13" r="3" fill="#59f0c2" /><circle class="led led--b" cx="32" cy="4" r="3" fill="#59f0c2" />
+              </g></g>
+              <g class="node" style="--d:.5s"><g transform="translate(407,175)">
+                <rect x="-46" y="-28" width="92" height="56" rx="11" fill="#0d264f" stroke="#3f8fd8" stroke-opacity="0.55" />
+                <rect x="-34" y="-16" width="60" height="6" rx="3" fill="#17417c" /><rect x="-34" y="-3" width="60" height="6" rx="3" fill="#17417c" /><rect x="-34" y="10" width="60" height="6" rx="3" fill="#17417c" />
+                <circle class="led" cx="32" cy="-13" r="3" fill="#59f0c2" /><circle class="led led--b" cx="32" cy="4" r="3" fill="#59f0c2" />
+              </g></g>
+              <g class="node" style="--d:1s"><g transform="translate(407,345)">
+                <rect x="-46" y="-28" width="92" height="56" rx="11" fill="#0d264f" stroke="#3f8fd8" stroke-opacity="0.55" />
+                <rect x="-34" y="-16" width="60" height="6" rx="3" fill="#17417c" /><rect x="-34" y="-3" width="60" height="6" rx="3" fill="#17417c" /><rect x="-34" y="10" width="60" height="6" rx="3" fill="#17417c" />
+                <circle class="led" cx="32" cy="-13" r="3" fill="#59f0c2" /><circle class="led led--b" cx="32" cy="4" r="3" fill="#59f0c2" />
+              </g></g>
+              <g class="node" style="--d:1.5s"><g transform="translate(260,430)">
+                <rect x="-46" y="-28" width="92" height="56" rx="11" fill="#0d264f" stroke="#3f8fd8" stroke-opacity="0.55" />
+                <rect x="-34" y="-16" width="60" height="6" rx="3" fill="#17417c" /><rect x="-34" y="-3" width="60" height="6" rx="3" fill="#17417c" /><rect x="-34" y="10" width="60" height="6" rx="3" fill="#17417c" />
+                <circle class="led" cx="32" cy="-13" r="3" fill="#59f0c2" /><circle class="led led--b" cx="32" cy="4" r="3" fill="#59f0c2" />
+              </g></g>
+              <g class="node" style="--d:2s"><g transform="translate(113,345)">
+                <rect x="-46" y="-28" width="92" height="56" rx="11" fill="#0d264f" stroke="#3f8fd8" stroke-opacity="0.55" />
+                <rect x="-34" y="-16" width="60" height="6" rx="3" fill="#17417c" /><rect x="-34" y="-3" width="60" height="6" rx="3" fill="#17417c" /><rect x="-34" y="10" width="60" height="6" rx="3" fill="#17417c" />
+                <circle class="led" cx="32" cy="-13" r="3" fill="#59f0c2" /><circle class="led led--b" cx="32" cy="4" r="3" fill="#59f0c2" />
+              </g></g>
+              <g class="node" style="--d:2.5s"><g transform="translate(113,175)">
+                <rect x="-46" y="-28" width="92" height="56" rx="11" fill="#0d264f" stroke="#3f8fd8" stroke-opacity="0.55" />
+                <rect x="-34" y="-16" width="60" height="6" rx="3" fill="#17417c" /><rect x="-34" y="-3" width="60" height="6" rx="3" fill="#17417c" /><rect x="-34" y="10" width="60" height="6" rx="3" fill="#17417c" />
+                <circle class="led" cx="32" cy="-13" r="3" fill="#59f0c2" /><circle class="led led--b" cx="32" cy="4" r="3" fill="#59f0c2" />
+              </g></g>
+
+              <!-- Paquets de données en circulation -->
+              <circle r="4" fill="#c7ecff" class="packet"><animateMotion dur="2.4s" repeatCount="indefinite" path="M260,260 L260,90" /></circle>
+              <circle r="4" fill="#c7ecff" class="packet"><animateMotion dur="2.9s" begin="0.6s" repeatCount="indefinite" path="M260,260 L407,175" /></circle>
+              <circle r="4" fill="#c7ecff" class="packet"><animateMotion dur="2.6s" begin="1.1s" repeatCount="indefinite" path="M260,260 L113,345" /></circle>
+              <circle r="3.4" fill="#7ad2f7" class="packet"><animateMotion dur="3.4s" begin="0.3s" repeatCount="indefinite" path="M407,175 L407,345" /></circle>
+              <circle r="3.4" fill="#7ad2f7" class="packet"><animateMotion dur="3.8s" begin="1.6s" repeatCount="indefinite" path="M113,175 L260,90" /></circle>
+
+              <!-- Cœur : bouclier -->
+              <circle cx="260" cy="260" r="76" fill="url(#coreGlow)" class="core-glow" />
+              <circle cx="260" cy="260" r="47" fill="#0b2350" stroke="#57c6fb" stroke-opacity="0.7" stroke-width="1.5" />
+              <g transform="translate(260,260) scale(1.15) translate(-32,-32)">
+                <path d="M32 8 L52 15 V31 C52 42 43 50 32 54 C21 50 12 42 12 31 V15 Z" fill="url(#shieldGrad)" stroke="#65cbfa" stroke-width="1.6" />
+                <path d="M23 31 L29 37 L42 24" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </svg>
+
+            <!-- Badges d'état flottants -->
+            <span class="cluster__badge cluster__badge--1"><span class="dot"></span>Surveillance 24/7</span>
+            <span class="cluster__badge cluster__badge--2"><span class="dot"></span>Redondance active</span>
+            <span class="cluster__badge cluster__badge--3"><span class="dot dot--ok"></span>Menace neutralisée</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container hero__foot">
+        <div>
+          <strong>2D Cloud</strong>
+          <span>Services de cybersécurité pour TPE, PME &amp; ETI</span>
+        </div>
+        <a href="mailto:contact@2dcloud.fr" class="hero__foot-mail">contact@2dcloud.fr</a>
+      </div>
+    </section>
+
+    <!-- ================= CARROUSEL 01 → 05 ================= -->
+    <section class="brochure" id="services" aria-roledescription="carrousel" aria-label="La plaquette 2D Cloud en 5 volets">
+      <div class="carousel" id="carousel">
+        <span class="carousel__progress" aria-hidden="true"><span class="carousel__progress-bar"></span></span>
+
+        <button class="carousel__side carousel__side--prev" id="carouselPrev" type="button" aria-label="Volet précédent">
+          <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="carousel__side carousel__side--next" id="carouselNext" type="button" aria-label="Volet suivant">
+          <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+
+        <div class="carousel__viewport">
+          <ul class="carousel__track" id="carouselTrack">
+
+            <!-- 01 · LE CONTEXTE -->
+            <li class="slide" id="contexte" role="group" aria-roledescription="diapositive" aria-label="1 sur 5: Le contexte">
+              <div class="slide__inner container">
+                <div class="section__head">
+                  <span class="section__num">01</span>
+                  <span class="overline">Le contexte</span>
+                </div>
+                <h2 class="section__title">
+                  La sécurité n'est plus une option,<br />
+                  c'est une <span class="accent-blue">nécessité.</span>
+                </h2>
+                <p class="section__intro">
+                  Une attaque informatique peut paralyser une entreprise en quelques heures:
+                  données bloquées, activité à l'arrêt, clients impactés. Les petites et moyennes
+                  structures sont les premières visées, car les moins bien protégées.
+                  <strong>Bonne nouvelle: se défendre efficacement est à votre portée.</strong>
+                </p>
+
+                <div class="stats">
+                  <article class="stat">
+                    <p class="stat__value">Près d'1 sur 2</p>
+                    <p class="stat__label">entreprise française a subi une cyberattaque réussie en 2024 <sup>(1)</sup></p>
+                  </article>
+                  <article class="stat">
+                    <p class="stat__value">N°1</p>
+                    <p class="stat__label">l'e-mail piégé (phishing) reste la première porte d'entrée des attaques <sup>(2)</sup></p>
+                  </article>
+                  <article class="stat">
+                    <p class="stat__value">466 000 €</p>
+                    <p class="stat__label">coût moyen d'une cyberattaque pour une TPE/PME, soit 5 à 10 % du CA <sup>(3)</sup></p>
+                  </article>
+                </div>
+
+                <div class="grid-2">
+                  <article class="argument">
+                    <span class="argument__icon"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 2 3 6v6c0 5 3.8 8.5 9 10 5.2-1.5 9-5 9-10V6l-9-4Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                    <h3>Vous n'avez pas d'équipe sécurité</h3>
+                    <p>Inutile de recruter. Nous devenons votre service de cybersécurité, pour une fraction du coût.</p>
+                  </article>
+                  <article class="argument">
+                    <span class="argument__icon"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                    <h3>Les menaces ne dorment jamais</h3>
+                    <p>Une attaque peut survenir la nuit ou le week-end. Notre surveillance, elle, ne s'arrête pas.</p>
+                  </article>
+                  <article class="argument">
+                    <span class="argument__icon"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 7h4v4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                    <h3>Le coût d'une attaque est élevé</h3>
+                    <p>En moyenne 466 000 € pour une TPE/PME <sup>(3)</sup>: pertes d'exploitation, remise en état, réputation. Prévenir coûte bien moins cher que réparer.</p>
+                  </article>
+                  <article class="argument">
+                    <span class="argument__icon"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 8h8M8 12h8M8 16h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+                    <h3>Vous devez rendre des comptes</h3>
+                    <p>Clients, assureurs, réglementation: prouver que vos données sont protégées devient indispensable.</p>
+                  </article>
+                </div>
+
+                <aside class="promise">
+                  <span class="promise__icon"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M12 2 3 6v6c0 5 3.8 8.5 9 10 5.2-1.5 9-5 9-10V6l-9-4Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  <p><strong>Notre promesse: une cybersécurité claire et sans jargon.</strong> Gardez votre énergie pour votre métier, on s'occupe de votre protection et on vous explique tout simplement.</p>
+                </aside>
+
+                <p class="sources">
+                  <strong>Sources:</strong> (1) Baromètre annuel CESIN / OpinionWay, édition 2025 (cyberattaques 2024).
+                  (2) Baromètre CESIN 2025: le phishing, 1<sup>er</sup> vecteur d'entrée des attaques réussies.
+                  (3) Cour des comptes, rapport sur la cybersécurité (2024), d'après l'ANSSI: coût moyen d'une
+                  cyberattaque estimé à 466 000 € pour une TPE/PME, soit 5 à 10 % du chiffre d'affaires.
+                </p>
+              </div>
+            </li>
+
+            <!-- 02 · PROTECTION DES POSTES -->
+            <li class="slide" id="service-postes" role="group" aria-roledescription="diapositive" aria-label="2 sur 5: Protection des postes">
+              <div class="slide__inner container">
+                <div class="section__head">
+                  <span class="section__num">02</span>
+                  <span class="overline">Service · Protection des postes</span>
+                </div>
+                <div class="service__intro">
+                  <span class="service__icon"><svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><rect x="2.5" y="4" width="19" height="12" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8 20h8M12 16v4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+                  <div>
+                    <h2 class="section__title">Protection &amp; surveillance de vos <span class="accent-blue">postes et serveurs</span></h2>
+                    <p class="section__intro">Un gardien intelligent installé sur chaque ordinateur et serveur. Il repère les comportements suspects en temps réel, bloque les attaques, et notre équipe intervient dès qu'une alerte sérieuse se déclenche.</p>
+                  </div>
+                </div>
+                <div class="points">
+                  <article class="point"><span class="point__key">A</span><div><h3>Bien plus intelligent qu'un antivirus classique</h3><p>Un antivirus ne reconnaît que les menaces déjà connues. Notre solution analyse les comportements et détecte aussi les attaques nouvelles ou déguisées.</p></div></article>
+                  <article class="point"><span class="point__key">B</span><div><h3>Une équipe qui réagit à votre place</h3><p>Quand une alerte sérieuse se déclenche, nos experts l'analysent et neutralisent la menace, souvent avant même que vous ne vous en aperceviez.</p></div></article>
+                  <article class="point"><span class="point__key">C</span><div><h3>Isolation immédiate en cas d'attaque</h3><p>Un appareil compromis peut être mis en quarantaine à distance en quelques secondes, pour empêcher l'attaque de se propager.</p></div></article>
+                </div>
+                <ol class="steps">
+                  <li class="step"><span class="step__num">Étape 1</span><h4>Surveillance</h4><p>Chaque poste est observé en continu, 24h/24 et 7j/7.</p></li>
+                  <li class="step"><span class="step__num">Étape 2</span><h4>Détection</h4><p>Tout comportement anormal déclenche une alerte instantanée.</p></li>
+                  <li class="step"><span class="step__num">Étape 3</span><h4>Réaction</h4><p>Notre équipe bloque la menace et isole l'appareil touché.</p></li>
+                  <li class="step"><span class="step__num">Étape 4</span><h4>Compte-rendu</h4><p>Vous recevez une explication claire de ce qui s'est passé.</p></li>
+                </ol>
+                <aside class="benefit"><span class="benefit__label">Ce que ça vous apporte</span><p>Vos ordinateurs et serveurs sont protégés en permanence par une technologie de pointe <strong>et</strong> de vrais experts. En cas de problème, quelqu'un veille et agit pour vous, sans délai.</p></aside>
+              </div>
+            </li>
+
+            <!-- 03 · AUDIT DE SÉCURITÉ -->
+            <li class="slide" id="service-audit" role="group" aria-roledescription="diapositive" aria-label="3 sur 5: Audit de sécurité">
+              <div class="slide__inner container">
+                <div class="section__head">
+                  <span class="section__num">03</span>
+                  <span class="overline">Service · Audit de sécurité</span>
+                </div>
+                <div class="service__intro">
+                  <span class="service__icon"><svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m16 16 5 5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M8 11l2.2 2.2L14 9" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  <div>
+                    <h2 class="section__title">Faites le point sur l'état de votre <span class="accent-blue">sécurité</span></h2>
+                    <p class="section__intro">On ne protège pas ce qu'on ne connaît pas. Notre audit dresse un état des lieux complet et compréhensible de votre informatique: on repère les portes laissées ouvertes et on vous remet une feuille de route concrète pour les refermer.</p>
+                  </div>
+                </div>
+                <div class="points">
+                  <article class="point"><span class="point__key">A</span><div><h3>Nous trouvons les failles avant les attaquants</h3><p>Nous examinons vos équipements, vos logiciels et vos accès pour repérer les vulnérabilités exploitables, et les refermer avant qu'un pirate ne les trouve.</p></div></article>
+                  <article class="point"><span class="point__key">B</span><div><h3>Un rapport clair, lisible par tous</h3><p>Pas de charabia technique. Un document qui explique où sont les risques, lesquels sont les plus urgents, et quoi faire en priorité.</p></div></article>
+                  <article class="point"><span class="point__key">C</span><div><h3>Des priorités classées et chiffrées</h3><p>Chaque faiblesse est notée selon sa gravité. Vous savez où investir en premier pour le meilleur résultat, sans dépenser inutilement.</p></div></article>
+                </div>
+                <ol class="steps">
+                  <li class="step"><span class="step__num">Étape 1</span><h4>Cadrage</h4><p>On définit ensemble votre périmètre et vos enjeux.</p></li>
+                  <li class="step"><span class="step__num">Étape 2</span><h4>Analyse</h4><p>On examine votre système pour identifier les faiblesses.</p></li>
+                  <li class="step"><span class="step__num">Étape 3</span><h4>Restitution</h4><p>On vous présente les résultats de vive voix, simplement.</p></li>
+                  <li class="step"><span class="step__num">Étape 4</span><h4>Plan d'action</h4><p>Vous repartez avec des étapes concrètes et priorisées.</p></li>
+                </ol>
+                <aside class="benefit"><span class="benefit__label">Ce que ça vous apporte</span><p>Une vision <strong>claire et honnête</strong> de votre niveau de sécurité, et un plan d'action réaliste. Vous arrêtez de subir l'incertitude et reprenez le contrôle.</p></aside>
+              </div>
+            </li>
+
+            <!-- 04 · PROTECTION DE LA MESSAGERIE -->
+            <li class="slide" id="service-messagerie" role="group" aria-roledescription="diapositive" aria-label="4 sur 5: Protection de la messagerie">
+              <div class="slide__inner container">
+                <div class="section__head">
+                  <span class="section__num">04</span>
+                  <span class="overline">Service · Protection de la messagerie</span>
+                </div>
+                <div class="service__intro">
+                  <span class="service__icon"><svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  <div>
+                    <h2 class="section__title">Une messagerie <span class="accent-blue">sous surveillance</span></h2>
+                    <p class="section__intro">La majorité des attaques arrivent par e-mail: faux messages, pièces jointes piégées, tentatives d'arnaque (le «&nbsp;phishing&nbsp;»). Nous surveillons votre messagerie pour repérer ces e-mails dangereux et protéger vos équipes du clic de trop.</p>
+                  </div>
+                </div>
+                <div class="points">
+                  <article class="point"><span class="point__key">A</span><div><h3>Détection des e-mails frauduleux et arnaques</h3><p>Faux e-mails de banque, de fournisseur ou de dirigeant, demandes de virement suspectes: nous repérons et signalons les tentatives de tromperie.</p></div></article>
+                  <article class="point"><span class="point__key">B</span><div><h3>Surveillance des pièces jointes et liens piégés</h3><p>Les fichiers et liens des e-mails sont analysés. Ceux qui cachent un virus ou mènent à un site malveillant sont identifiés et bloqués.</p></div></article>
+                  <article class="point"><span class="point__key">C</span><div><h3>Alertes et rapports réguliers</h3><p>Vous êtes prévenu en cas de menace, et recevez un récapitulatif régulier des e-mails dangereux interceptés.</p></div></article>
+                </div>
+                <ol class="steps">
+                  <li class="step"><span class="step__num">Étape 1</span><h4>Analyse</h4><p>Les e-mails entrants sont passés au crible en continu.</p></li>
+                  <li class="step"><span class="step__num">Étape 2</span><h4>Repérage</h4><p>Les messages suspects ou frauduleux sont identifiés.</p></li>
+                  <li class="step"><span class="step__num">Étape 3</span><h4>Alerte</h4><p>Vous et vos équipes êtes prévenus du danger.</p></li>
+                  <li class="step"><span class="step__num">Étape 4</span><h4>Rapport</h4><p>Un bilan régulier vous montre ce qui a été bloqué.</p></li>
+                </ol>
+                <aside class="benefit"><span class="benefit__label">Ce que ça vous apporte</span><p>Vous fermez la <strong>principale porte d'entrée des attaques</strong>. Vos équipes sont protégées du clic de trop et vos finances à l'abri des arnaques.</p></aside>
+              </div>
+            </li>
+
+            <!-- 05 · EN RÉSUMÉ -->
+            <li class="slide" id="resume" role="group" aria-roledescription="diapositive" aria-label="5 sur 5: En résumé">
+              <div class="slide__inner container">
+                <div class="section__head">
+                  <span class="section__num">05</span>
+                  <span class="overline">En résumé</span>
+                </div>
+                <h2 class="section__title">Trois services,<br />une seule tranquillité d'esprit</h2>
+                <p class="section__intro">Ensemble ou séparément, nos services couvrent les trois portes d'entrée les plus utilisées par les attaquants: vos appareils, vos failles et votre messagerie. Choisissez ce qui correspond à vos besoins, on s'occupe du reste.</p>
+                <div class="recap">
+                  <a href="#service-postes" class="recap__card">
+                    <span class="recap__icon"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><rect x="2.5" y="4" width="19" height="12" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8 20h8M12 16v4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+                    <div><h3>Protection des postes &amp; serveurs</h3><p>Surveillance permanente de vos appareils et réaction immédiate de nos experts en cas d'attaque.</p></div>
+                  </a>
+                  <a href="#service-audit" class="recap__card">
+                    <span class="recap__icon"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m16 16 5 5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+                    <div><h3>Audit de sécurité</h3><p>État des lieux complet de vos risques et feuille de route claire pour renforcer votre protection.</p></div>
+                  </a>
+                  <a href="#service-messagerie" class="recap__card">
+                    <span class="recap__icon"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                    <div><h3>Protection de la messagerie</h3><p>Détection des e-mails frauduleux et du phishing, avec alertes et rapports réguliers.</p></div>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- Contrôles du carrousel -->
+        <div class="carousel__controls container">
+          <button class="carousel__play" id="carouselPlay" type="button" aria-pressed="true" aria-label="Mettre en pause le carrousel">
+            <svg class="icon-pause" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1.2" fill="currentColor"/><rect x="14" y="5" width="4" height="14" rx="1.2" fill="currentColor"/></svg>
+            <svg class="icon-play" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5Z" fill="currentColor"/></svg>
+          </button>
+
+          <div class="carousel__dots" role="tablist" aria-label="Choisir un volet">
+            <button class="carousel__dot" type="button" data-i="0" aria-label="Volet 01 · Le contexte"><span>01</span></button>
+            <button class="carousel__dot" type="button" data-i="1" aria-label="Volet 02 · Protection des postes"><span>02</span></button>
+            <button class="carousel__dot" type="button" data-i="2" aria-label="Volet 03 · Audit de sécurité"><span>03</span></button>
+            <button class="carousel__dot" type="button" data-i="3" aria-label="Volet 04 · Protection de la messagerie"><span>04</span></button>
+            <button class="carousel__dot" type="button" data-i="4" aria-label="Volet 05 · En résumé"><span>05</span></button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA / CONTACT ================= -->
+    <section class="cta" id="contact">
+      <div class="cta__glow" aria-hidden="true"></div>
+      <div class="container cta__inner">
+        <h2 class="cta__title">Parlons de votre <span class="accent">protection.</span></h2>
+        <p class="cta__lead">Un échange sans engagement pour comprendre votre situation et vous proposer ce qui correspond vraiment à vos besoins et à votre budget. <strong>C'est gratuit.</strong></p>
+        <div class="cta__contacts">
+          <a class="cta__contact" href="mailto:contact@2dcloud.fr">
+            <span class="cta__contact-label">E-mail</span>
+            <span class="cta__contact-value">contact@2dcloud.fr</span>
+          </a>
+          <a class="btn btn--primary cta__btn" href="mailto:contact@2dcloud.fr?subject=Demande%20d'%C3%A9change%20-%202D%20Cloud">Écrire à 2D Cloud</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <a href="#hero" class="brand brand--footer" aria-label="2D Cloud">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" width="30" height="30" role="img">
+            <path d="M32 3 L57 12 V31 C57 46 46 56 32 61 C18 56 7 46 7 31 V12 Z" fill="url(#shieldGrad)" stroke="#4fc0f5" stroke-width="2"/>
+            <path d="M21 32 L29 40 L44 23" fill="none" stroke="#fff" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="brand__name">2D <span>Cloud</span> · <em>Cybersécurité managée</em></span>
+      </a>
+      <p class="footer__meta">
+        © <span id="year">2026</span> 2D Cloud · Services de cybersécurité pour TPE, PME &amp; ETI<br />
+        <a href="mailto:contact@2dcloud.fr">contact@2dcloud.fr</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js?v=2" defer></script>
+</body>
+</html>

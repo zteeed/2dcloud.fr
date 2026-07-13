@@ -1,0 +1,50 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  # Rebuild périodique: le 1er de chaque mois à 04:00 UTC.
+  # Garantit que l'année du pied de page reste à jour (injectée au build)
+  # même sans nouveau commit, notamment au passage à la nouvelle année.
+  schedule:
+    - cron: "0 4 1 * *"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Un seul déploiement à la fois, on annule les runs en cours
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Injecter l'année courante
+        run: |
+          YEAR="$(date -u +%Y)"
+          echo "Année injectée: $YEAR"
+          find . -maxdepth 1 -name '*.html' -print0 \
+            | xargs -0 sed -i "s#<span id=\"year\">[0-9]\{4\}</span>#<span id=\"year\">$YEAR</span>#g"
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v6
+
+      - name: Upload artifact (site statique)
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: '.'
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v5

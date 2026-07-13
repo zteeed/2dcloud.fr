@@ -1,0 +1,12 @@
+{
+  "name": "2dcloud-e2e",
+  "private": true,
+  "type": "module",
+  "description": "Tests end-to-end du site 2D Cloud (carrousel, thème, layout)",
+  "scripts": {
+    "test": "node carousel.test.mjs"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.49.1"
+  }
+}
