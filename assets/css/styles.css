@@ -515,6 +515,70 @@ sup { font-size: 0.62em; color: var(--cyan-500); font-weight: 600; }
   #contexte .grid-2 { grid-template-columns: repeat(4, 1fr); }
 }
 
+/* ---------- Indice de swipe (mobile) ---------- */
+.carousel__hint { display: none; }
+@keyframes swipeHint { 0%, 100% { transform: translateX(-3px); } 50% { transform: translateX(3px); } }
+
+/* ---------- Carrousel: contenu compact sur mobile ---------- */
+@media (max-width: 600px) {
+  .brochure { padding: 34px 0 44px; }
+  .carousel__hint {
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    width: max-content; margin: 2px auto 8px;
+    font-family: var(--font-head); font-weight: 500; font-size: 0.76rem; color: var(--slate-500);
+  }
+  .carousel__hint svg { color: var(--cyan-500); animation: swipeHint 1.6s ease-in-out infinite; }
+
+  .slide { padding: 2px 0; }
+  .slide .section__head { margin-bottom: 10px; gap: 10px; }
+  .slide .section__num { min-width: 27px; height: 27px; font-size: 0.72rem; }
+  .slide .overline { font-size: 0.62rem; letter-spacing: 0.12em; }
+  .slide .section__title { font-size: 1.25rem; }
+  .slide .section__intro { font-size: 0.83rem; margin-top: 8px; line-height: 1.5; }
+  .slide .service__intro { gap: 12px; margin-bottom: 12px; }
+  .slide .service__icon { width: 44px; height: 44px; border-radius: 13px; }
+
+  .slide .stats { gap: 8px; margin: 12px 0; }
+  .slide .stat { padding: 11px 13px; border-radius: 14px; }
+  .slide .stat__value { font-size: 1.2rem; }
+  .slide .stat__label { font-size: 0.76rem; }
+
+  #contexte .grid-2 { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .slide .argument { padding: 11px 12px; }
+  .slide .argument__icon { width: 30px; height: 30px; margin-bottom: 6px; border-radius: 9px; }
+  .slide .argument h3 { font-size: 0.82rem; margin-bottom: 3px; }
+  .slide .argument p { font-size: 0.72rem; line-height: 1.4; }
+
+  .slide .points { gap: 8px; margin-bottom: 12px; }
+  .slide .point { padding: 11px 12px; gap: 10px; }
+  .slide .point__key { width: 27px; height: 27px; font-size: 0.82rem; }
+  .slide .point h3 { font-size: 0.86rem; }
+  .slide .point p { font-size: 0.76rem; }
+
+  .slide .step { padding: 11px 13px; }
+  .slide .step h4 { font-size: 0.9rem; }
+  .slide .step p { font-size: 0.76rem; }
+
+  .slide .benefit { padding: 11px 14px; margin-top: 12px; }
+  .slide .benefit__label { font-size: 0.66rem; }
+  .slide .benefit p { font-size: 0.83rem; }
+
+  .slide .promise { padding: 13px 15px; gap: 12px; margin-top: 12px; }
+  .slide .promise__icon { width: 40px; height: 40px; }
+  .slide .promise p { font-size: 0.82rem; }
+
+  .slide .recap { gap: 10px; margin-top: 14px; }
+  .slide .recap__card { padding: 13px 13px; gap: 12px; }
+  .slide .recap__icon { width: 40px; height: 40px; }
+  .slide .recap__card h3 { font-size: 0.88rem; }
+  .slide .recap__card p { font-size: 0.76rem; }
+
+  .slide .sources { font-size: 0.65rem; margin-top: 10px; }
+
+  .carousel__controls { margin-top: 12px; gap: 14px; }
+  .carousel__dot { min-width: 33px; height: 30px; font-size: 0.66rem; }
+}
+
 /* =========================================================
    CTA / CONTACT
    ========================================================= */
