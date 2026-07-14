@@ -156,6 +156,11 @@ console.log("\n[4] Pause au survol");
   const { ctx, page } = await newPage("light");
   await page.goto(URL, { waitUntil: "load" });
   await page.waitForTimeout(300);
+  // amener le carrousel à l'écran + souris neutre, puis survoler (pour que
+  // le mouseenter se déclenche vraiment, comme un vrai utilisateur)
+  await page.evaluate(() => document.getElementById("carousel").scrollIntoView({ block: "center" }));
+  await page.waitForTimeout(300);
+  await page.mouse.move(10, 10);
   await page.hover(".carousel__viewport");
   const h1 = await idx(page);
   await page.waitForTimeout(8000);
