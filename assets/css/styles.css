@@ -673,10 +673,6 @@ sup { font-size: 0.62em; color: var(--cyan-500); font-weight: 600; }
 
 @media (max-width: 520px) {
   .container { padding-inline: 18px; }
-  .brochure { padding: 52px 0 64px; }
-  .steps { grid-template-columns: 1fr; }
-  .step { border-right: 0 !important; border-bottom: 1px solid var(--border-soft); }
-  .step:last-child { border-bottom: 0; }
   .promise { flex-direction: column; align-items: flex-start; gap: 16px; padding: 24px 20px; }
   .cta__contact { min-width: 0; width: 100%; }
   .cta__btn { width: 100%; }
