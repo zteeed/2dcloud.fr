@@ -525,20 +525,9 @@ sup { font-size: 0.62em; color: var(--cyan-500); font-weight: 600; }
   #contexte .grid-2 { grid-template-columns: repeat(4, 1fr); }
 }
 
-/* ---------- Indice de swipe (mobile) ---------- */
-.carousel__hint { display: none; }
-@keyframes swipeHint { 0%, 100% { transform: translateX(-3px); } 50% { transform: translateX(3px); } }
-
 /* ---------- Carrousel: contenu compact sur mobile ---------- */
 @media (max-width: 600px) {
   .brochure { padding: 34px 0 44px; }
-  .carousel__hint {
-    display: flex; align-items: center; justify-content: center; gap: 8px;
-    width: max-content; margin: 2px auto 8px;
-    font-family: var(--font-head); font-weight: 500; font-size: 0.76rem; color: var(--slate-500);
-  }
-  .carousel__hint svg { color: var(--cyan-500); animation: swipeHint 1.6s ease-in-out infinite; }
-
   .slide { padding: 2px 0; }
   .slide .section__head { margin-bottom: 10px; gap: 10px; }
   .slide .section__num { min-width: 27px; height: 27px; font-size: 0.72rem; }
