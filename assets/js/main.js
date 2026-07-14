@@ -66,8 +66,10 @@
     var INTERVAL = 7000;
 
     var viewport = carousel.querySelector(".carousel__viewport");
+    // Pas d'autoplay par défaut sur mobile (ni si mouvement réduit)
+    var noAutoplay = reduceMotion || (window.matchMedia && window.matchMedia("(max-width: 760px)").matches);
     var index = 0;
-    var playing = !reduceMotion;
+    var playing = !noAutoplay;
     var hovering = false;
     var elapsed = 0;
     var last = 0;

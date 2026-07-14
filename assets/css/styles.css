@@ -147,6 +147,8 @@ sup { font-size: 0.62em; color: var(--cyan-500); font-weight: 600; }
 }
 .header__inner { display: flex; align-items: center; justify-content: space-between; height: 74px; }
 .header__actions { display: flex; align-items: center; gap: 8px; }
+/* logo + boutons du header au-dessus du menu plein écran (mobile) */
+.brand, .theme-toggle, .nav__toggle { position: relative; z-index: 100; }
 
 .brand { display: inline-flex; align-items: center; gap: 12px; }
 .brand__mark {
@@ -492,7 +494,15 @@ sup { font-size: 0.62em; color: var(--cyan-500); font-weight: 600; }
 .carousel__side--prev { left: 18px; }
 .carousel__side--next { right: 18px; }
 @media (max-width: 1240px) { .carousel__side--prev { left: 8px; } .carousel__side--next { right: 8px; } }
-@media (max-width: 760px) { .carousel__side { display: none; } }
+@media (max-width: 760px) {
+  .carousel__side {
+    display: grid; width: 38px; height: 38px;
+    background: rgba(11, 23, 45, 0.5); border-color: rgba(130, 190, 245, 0.42); color: #eef6ff;
+    box-shadow: 0 6px 16px rgba(4, 12, 30, 0.42); backdrop-filter: blur(3px);
+  }
+  .carousel__side--prev { left: 2px; }
+  .carousel__side--next { right: 2px; }
+}
 
 /* ---------- Volet 01 (contexte): le plus dense, compactage renforcé ---------- */
 #contexte .section__title { font-size: clamp(1.35rem, 2.5vw, 1.85rem); }
@@ -652,15 +662,16 @@ sup { font-size: 0.62em; color: var(--cyan-500); font-weight: 600; }
 @media (max-width: 760px) {
   .nav__toggle { display: flex; }
   .nav__menu {
-    position: absolute; top: 74px; right: 16px; left: 16px;
-    flex-direction: column; align-items: stretch; gap: 4px;
-    background: var(--menu-bg); z-index: 300;
-    border: 1px solid var(--border); border-radius: 16px; padding: 12px; box-shadow: var(--shadow-lg);
-    opacity: 0; visibility: hidden; transform: translateY(-10px);
+    position: fixed; inset: 0; z-index: 90;
+    flex-direction: column; align-items: stretch; gap: 6px;
+    background: var(--menu-bg);
+    border: 0; border-radius: 0; padding: 90px 20px 24px; box-shadow: none;
+    opacity: 0; visibility: hidden; transform: translateY(-6px);
     transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s;
+    overflow-y: auto;
   }
   .nav__menu.is-open { opacity: 1; visibility: visible; transform: none; }
-  .nav__menu a { color: var(--slate-700); padding: 13px 16px; border-radius: 10px; }
+  .nav__menu a { display: block; color: var(--slate-700); padding: 15px 16px; border-radius: 12px; font-size: 1.05rem; }
   .nav__menu a:hover { background: rgba(70, 140, 220, 0.10); color: var(--ink); }
   .nav__cta { justify-content: center; margin-top: 4px; }
 
